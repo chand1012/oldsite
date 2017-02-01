@@ -1,0 +1,8 @@
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('http://img11.deviantart.net/ac4c/i/2010/360/d/8/orbitals_by_ifreex-d35p0nt.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
