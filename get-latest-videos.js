@@ -7,7 +7,7 @@ function show_my_videos(data){
 	});
 	$("#videos").html(html.join(''));
 }
-// Replace chand1012 with the channel you want
+
 // Change max-results to the number of videos you want to display
 $.ajax({
 	type: "GET",
@@ -18,7 +18,7 @@ $.ajax({
 		show_my_videos(data);
 		//If you want to see in console...
 		console.log(data);
-    console.log(data.data.items);
+    console.log(data.items);
 		// });
   }
 });
