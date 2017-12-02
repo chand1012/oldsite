@@ -90,7 +90,7 @@ function addXY(button, text) {
       pico8_buttons[0] += map["right"]
     } else if (x < -20) {
       pico8_buttons[0] += map["left"]
-    } 
+    }
     if (y > 20) {
       pico8_buttons[0] += map["up"]
     } else if (y < -20) {
@@ -121,11 +121,11 @@ function addXY(button, text) {
     if (x < 20) {
       if (btns.includes(1))
       pico8_buttons[0] -= map["right"]
-    } 
+    }
     if (x > -20) {
       if (btns.includes(0))
       pico8_buttons[0] -= map["left"]
-    } 
+    }
     if (y < 20 ){
       if (btns.includes(2))
       pico8_buttons[0] -= map["up"]
@@ -134,16 +134,16 @@ function addXY(button, text) {
       if (btns.includes(3))
       pico8_buttons[0] -= map["down"]
     }
-    
+
     //if move into area
     if (x > 20) {
       if (!btns.includes(1))
       pico8_buttons[0] += map["right"]
-    } 
+    }
     if (x < -20) {
-      if (!btns.includes(0)) 
+      if (!btns.includes(0))
       pico8_buttons[0] += map["left"]
-    } 
+    }
     if (y > 20) {
       if (!btns.includes(2))
       pico8_buttons[0] += map["up"]
@@ -174,6 +174,3 @@ function calculateButtons(picobtns) {
 addXY("xy", "XY")
 addButton("x","X")
 pauseButton()
-
-
-
